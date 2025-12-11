@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная №7: ИИ и jQuery</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jqueryui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+
+<!-- ---------------------------
+        Задача A: Вкладки
+------------------------------>
+<div class="tabs-container">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="tab-1">Что такое ИИ</button>
+    <button class="tab-btn" data-tab="tab-2">Применение</button>
+    <button class="tab-btn" data-tab="tab-3">Будущее</button>
+  </div>
+  <div class="tab-content active" id="tab-1">
+    <p>Искусственный интеллект (ИИ) — это область компьютерных наук, которая занимается созданием систем, способных выполнять задачи, требующие человеческого интеллекта, например, понимание языка, распознавание изображений и принятие решений.</p>
+  </div>
+  <div class="tab-content" id="tab-2">
+    <p>ИИ применяется в медицине, образовании, финансах, автономных транспортных системах и даже в творческих областях, таких как генерация музыки и изображений.</p>
+  </div>
+  <div class="tab-content" id="tab-3">
+    <p>Будущее ИИ включает развитие самоуправляемых систем, более точного анализа данных и усиление взаимодействия человека и машины для решения сложных глобальных задач.</p>
+  </div>
+</div>
+
+<!-- ---------------------------
+        Задача B: Плавная прокрутка
+------------------------------>
+<nav class="menu">
+  <a href="#section-1">ИИ сегодня</a>
+  <a href="#section-2">ИИ завтра</a>
+</nav>
+<div id="section-1" class="section">
+  <p>Сегодня ИИ помогает автоматизировать рутинные задачи, улучшать диагностику в медицине и ускорять обработку данных.</p>
+</div>
+<div id="section-2" class="section">
+  <p>Завтра ИИ может стать полноценным помощником в научных исследованиях, искусстве и принятии стратегических решений.</p>
+</div>
+
+<!-- ---------------------------
+        Задача C: AJAX-запрос
+------------------------------>
+<div class="ajax-section">
+  <button id="loadQuote">Загрузить цитату об ИИ</button>
+  <blockquote id="quote">
+    <p>ИИ позволяет компьютерам учиться на опыте и адаптироваться к новым задачам.</p>
+    <cite>Автор</cite>
+  </blockquote>
+</div>
+
+<!-- ---------------------------
+        Задача D: jQuery UI
+------------------------------>
+<div class="ui-section">
+  <div id="draggable" class="ui-widget-content">
+    <p>Перетащи меня — это символ гибкости ИИ</p>
+  </div>
+  <input type="text" id="datepicker" placeholder="Выберите дату эксперимента с ИИ">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
